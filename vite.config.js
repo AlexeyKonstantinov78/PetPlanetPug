@@ -1,5 +1,6 @@
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { defineConfig } from 'vite';
+import pugPlugin from "vite-plugin-pug";
 
 const DEFAULT_OPTIONS = {
   test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
@@ -42,5 +43,6 @@ export default defineConfig({
     ViteImageOptimizer(
       DEFAULT_OPTIONS
     ),
+    pugPlugin(),
   ],
 });
