@@ -1,2 +1,67 @@
 main.main
-  h1 Hello World
+  div.container
+    h1.visually-hidden Pet Planet - магазин товаров для животных
+  section.hero
+    div.container.hero__container
+      h2.visually-hidden Товары для твоих любимцев
+      img.hero__img(src="img/tittle.svg", alt="Заговловок Товары для твоих любимцев")        
+      p.hero__text Большой выбор домиков, лежанок и&nbsp;кормов для кошек и&nbsp;собак    
+  section.about
+    .container(class="about__container")
+      h2(class="about__title") О нас
+      div(class="about__box")
+        div(class="about__content")
+          // Кошка
+          p(class="about__text")
+            | Мы — команда любящих и заботливых владельцев животных, которые
+            |   с особым вниманием относятся к потребностям и радостям наших пушистых друзей.
+          p(class="about__text")
+            | Стремясь к тому, чтобы ваш питомец был здоровым, счастливым и полным
+            |   энергии, мы предлагаем только лучшие товары и услуги, проверенные временем
+            |   и рекомендованные ветеринарами.
+  section.advantages
+    div(class="advantages__bg")
+      .container(class="advantages__container")
+        h2(class="advantages__title") Наши преимущества
+        ul(class="advantages__list")
+          li(class="advantages__item advantages__item_dog-house")
+            // <img src="img/dog-house.png" alt="дом собаки">
+            h3(class="advantages__subtitle") Широкий ассортимент
+            p(class="advantages__text")
+              | У нас есть все для того, чтобы сделать жизнь вашего любимца комфортной
+              |   и уютной.
+          li(class="advantages__item advantages__item_dog-fodder")
+            // <img src="img/dog-fodder.png" alt="корм">
+            h3(class="advantages__subtitle") Качество и безопасность
+            p(class="advantages__text")
+              | Мы тщательно отбираем товары для наших клиентов, уделяя особое внимание
+              |   качеству и безопасности.
+          li(class="advantages__item advantages__item_dog")
+            // <img src="img/dog.png" alt="cобакa">
+            h3(class="advantages__subtitle") Персональный подход
+            p(class="advantages__text")
+              | Мы понимаем, что каждый питомец уникален, поэтому предлагаем вам
+              |   индивидуальные рекомендации по выбору товаров.
+      div(class="advantages__count-box")
+        p(class="advantages__count") 10
+        p(class="advantages__count-text") магазинов в сети
+  section.subscribe
+    .container(class="subscribe__container")
+      h2(class="subscribe__title") Подпишись на рассылку и узнавай о новинках первым!
+      form(
+        method="post" 
+        action="#" 
+        class="subscribe__form"
+        )
+        fieldset(class="subscribe__field")
+          input(
+            placeholder="E-mail" 
+            name="email" 
+            type="email" 
+            class="subscribe__input"
+            )
+          button(
+            type="submit" 
+            class="subscribe__btn"
+            )
+            span Отправить
